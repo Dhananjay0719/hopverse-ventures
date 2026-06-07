@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate favicon assets from public/assets/logo.png."""
+"""Generate favicon assets from the Hopverse logo icon mark."""
 
 from pathlib import Path
 
@@ -19,10 +19,25 @@ SIZES = {
 
 ICO_SIZES = [16, 32, 48]
 
+# Icon-only crop of logo.png (H + rabbit mark, excluding wordmark text).
+ICON_CROP = (95, 48, 405, 298)
 
-def resize_logo(size: int) -> Image.Image:
+
+def load_icon_mark() -> Image.Image:
     img = Image.open(LOGO).convert("RGBA")
-    return img.resize((size, size), Image.Resampling.LANCZOS)
+    if not LOGO.exists():
+        raise FileNotFoundError(LOGO)
+
+    icon = img.crop(ICON_CROP)
+
+    # Flatten onto dark site background so favicons match the brand palette.
+    background = Image.new("RGBA", icon.size, (8, 8, 7, 255))
+    background.alpha_composite(icon)
+    return background
+
+
+def resize_icon(size: int) -> Image.Image:
+    return load_icon_mark().resize((size, size), Image.Resampling.LANCZOS)
 
 
 def main() -> None:
@@ -31,10 +46,10 @@ def main() -> None:
 
     for filename, size in SIZES.items():
         out = PUBLIC / filename
-        resize_logo(size).save(out, format="PNG", optimize=True)
+        resize_icon(size).save(out, format="PNG", optimize=True)
         print(f"Wrote {out} ({size}x{size})")
 
-    ico_images = [resize_logo(size) for size in ICO_SIZES]
+    ico_images = [resize_icon(size) for size in ICO_SIZES]
     ico_path = PUBLIC / "favicon.ico"
     ico_images[0].save(
         ico_path,

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm run generate:favicons && vite build",
+    "build": "vite build",
     "preview": "vite preview",
     "generate:favicons": "python3 scripts/generate-favicons.py"
   },

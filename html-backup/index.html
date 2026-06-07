@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hopverse — Building the Future of Intelligent Digital Products</title>
+  <meta name="description" content="Hopverse is a technology-first venture creating scalable software solutions and next-generation platforms. AI solutions, software development, platform engineering." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Outfit:wght@200;300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══ NAVIGATION ═══ -->
+  <nav class="site-nav" id="site-nav">
+    <div class="nav-brand">
+      <span class="nav-logo-text">Hopverse</span>
+    </div>
+    <div class="nav-links">
+      <a href="#about">About</a>
+      <a href="#ecosystem">Ecosystem</a>
+      <a href="#services">Services</a>
+      <a href="#vision">Vision</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- ═══ MOBILE MENU ═══ -->
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="#about">About</a>
+    <a href="#ecosystem">Ecosystem</a>
+    <a href="#services">Services</a>
+    <a href="#vision">Vision</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- ═══ HERO SECTION ═══ -->
+  <section class="hero" id="hero">
+    <canvas id="hero-particles"></canvas>
+    <div class="hero-glow"></div>
+    <div class="hero-glow-2"></div>
+    <div class="hero-content">
+      <div class="hero-eyebrow reveal">
+        <span class="eyebrow-line"></span>
+        <span>Technology · Innovation · Scale</span>
+        <span class="eyebrow-line"></span>
+      </div>
+      <h1 class="hero-headline reveal">
+        Building the Future of<br />
+        <span class="gradient-text">Intelligent Digital Products</span>
+      </h1>
+      <p class="hero-sub reveal">
+        A technology-first venture creating scalable software solutions and next-generation platforms.
+      </p>
+      <div class="hero-buttons reveal">
+        <a href="#ecosystem" class="btn-primary">Explore Our Ecosystem</a>
+        <a href="#contact" class="btn-secondary">Get in Touch</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <!-- ═══ MARQUEE ═══ -->
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>Artificial Intelligence</span><span class="marquee-dot"></span>
+      <span>Software Engineering</span><span class="marquee-dot"></span>
+      <span>Cloud Infrastructure</span><span class="marquee-dot"></span>
+      <span>Platform Engineering</span><span class="marquee-dot"></span>
+      <span>Digital Products</span><span class="marquee-dot"></span>
+      <span>Scalable Architecture</span><span class="marquee-dot"></span>
+      <span>Artificial Intelligence</span><span class="marquee-dot"></span>
+      <span>Software Engineering</span><span class="marquee-dot"></span>
+      <span>Cloud Infrastructure</span><span class="marquee-dot"></span>
+      <span>Platform Engineering</span><span class="marquee-dot"></span>
+      <span>Digital Products</span><span class="marquee-dot"></span>
+      <span>Scalable Architecture</span><span class="marquee-dot"></span>
+    </div>
+  </div>
+
+  <!-- ═══ ABOUT SECTION ═══ -->
+  <section class="about" id="about">
+    <div class="section-container">
+      <div class="section-label reveal">
+        <span>Who We Are</span>
+        <span class="label-line"></span>
+      </div>
+      <div class="about-grid">
+        <div class="about-left">
+          <h2 class="section-title reveal">
+            Engineering Excellence,<br />
+            <em class="accent-text">Delivered at Scale</em>
+          </h2>
+          <p class="about-text reveal">
+            Hopverse was founded on a singular belief — that exceptional technology should be the foundation of every meaningful digital experience. We are a technology-first venture studio that builds, incubates, and scales intelligent digital products from the ground up.
+          </p>
+          <p class="about-text reveal">
+            Our approach combines deep engineering expertise with product-first thinking. Every platform we build is designed for resilience, scalability, and long-term impact. We don't chase trends — we architect systems that define them.
+          </p>
+        </div>
+        <div class="about-right">
+          <div class="about-stat-card reveal">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Scalability First</div>
+          </div>
+          <div class="about-stat-card reveal">
+            <div class="stat-number">&lt;1s</div>
+            <div class="stat-label">Latency Targets</div>
+          </div>
+          <div class="about-stat-card reveal">
+            <div class="stat-number">24/7</div>
+            <div class="stat-label">Always On</div>
+          </div>
+          <div class="about-stat-card reveal">
+            <div class="stat-number">AI+</div>
+            <div class="stat-label">Intelligence Built-In</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ ECOSYSTEM / PRODUCTS SECTION ═══ -->
+  <section class="ecosystem" id="ecosystem">
+    <div class="section-container">
+      <div class="section-label reveal">
+        <span>Our Ecosystem</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">
+        Products That <em class="accent-text">Redefine Industries</em>
+      </h2>
+      <p class="section-desc reveal">
+        We build and scale products across verticals — each designed to deliver transformative impact.
+      </p>
+
+      <div class="products-grid">
+        <!-- Hoppit Card -->
+        <div class="product-card featured reveal" id="product-hoppit">
+          <div class="product-tag">Live</div>
+          <div class="product-icon">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M24 4L6 14v20l18 10 18-10V14L24 4z" stroke="currentColor" stroke-width="1.5" fill="none"/>
+              <path d="M6 14l18 10m0 0l18-10M24 24v20" stroke="currentColor" stroke-width="1.5" opacity="0.5"/>
+              <circle cx="24" cy="18" r="4" fill="currentColor" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Hoppit</h3>
+          <p class="product-desc">A rapid delivery platform built for speed, efficiency, and modern logistics.</p>
+          <div class="product-tags-row">
+            <span class="pill">Logistics</span>
+            <span class="pill">Delivery</span>
+            <span class="pill">Real-time</span>
+          </div>
+        </div>
+
+        <!-- Coming Soon Card 1 -->
+        <div class="product-card coming-soon reveal" id="product-soon-1">
+          <div class="product-tag muted">Coming Soon</div>
+          <div class="product-icon dimmed">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="8" y="8" width="32" height="32" rx="4" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+              <circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.3"/>
+              <path d="M24 16v8l5 5" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Stealth Product</h3>
+          <p class="product-desc">More products coming soon. We're building something extraordinary.</p>
+          <div class="product-tags-row">
+            <span class="pill muted-pill">In Development</span>
+          </div>
+        </div>
+
+        <!-- Coming Soon Card 2 -->
+        <div class="product-card coming-soon reveal" id="product-soon-2">
+          <div class="product-tag muted">Coming Soon</div>
+          <div class="product-icon dimmed">
+            <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 36l12-28 12 28" stroke="currentColor" stroke-width="1.5" fill="none" opacity="0.4"/>
+              <path d="M16 28h16" stroke="currentColor" stroke-width="1.5" opacity="0.3"/>
+              <circle cx="24" cy="14" r="3" fill="currentColor" opacity="0.2"/>
+            </svg>
+          </div>
+          <h3 class="product-name">Stealth Product</h3>
+          <p class="product-desc">More products coming soon. Innovation is always in motion.</p>
+          <div class="product-tags-row">
+            <span class="pill muted-pill">In Development</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHAT WE DO / SERVICES ═══ -->
+  <section class="services" id="services">
+    <div class="section-container">
+      <div class="section-label reveal">
+        <span>What We Do</span>
+        <span class="label-line"></span>
+      </div>
+      <h2 class="section-title reveal">
+        Full-Spectrum <em class="accent-text">Technology Capabilities</em>
+      </h2>
+
+      <div class="services-grid">
+        <div class="service-card reveal" id="service-ai">
+          <div class="service-number">01</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="20" r="14" stroke="currentColor" stroke-width="1"/><circle cx="20" cy="20" r="6" stroke="currentColor" stroke-width="1" opacity="0.5"/><circle cx="20" cy="20" r="2" fill="currentColor" opacity="0.4"/><path d="M20 6v4M20 30v4M6 20h4M30 20h4" stroke="currentColor" stroke-width="0.8" opacity="0.3"/></svg>
+          </div>
+          <h3>AI Solutions</h3>
+          <p>Intelligent systems powered by machine learning, NLP, and computer vision — designed to automate, predict, and transform workflows.</p>
+        </div>
+
+        <div class="service-card reveal" id="service-dev">
+          <div class="service-number">02</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none"><rect x="6" y="10" width="28" height="20" rx="2" stroke="currentColor" stroke-width="1"/><path d="M14 18l-4 4 4 4M26 18l4 4-4 4M22 16l-4 12" stroke="currentColor" stroke-width="1" opacity="0.5"/></svg>
+          </div>
+          <h3>Software Development</h3>
+          <p>End-to-end engineering of web, mobile, and enterprise applications — built with modern stacks and rigorous quality standards.</p>
+        </div>
+
+        <div class="service-card reveal" id="service-platform">
+          <div class="service-number">03</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none"><path d="M8 28l12-8 12 8" stroke="currentColor" stroke-width="1"/><path d="M8 22l12-8 12 8" stroke="currentColor" stroke-width="1" opacity="0.5"/><path d="M8 16l12-8 12 8" stroke="currentColor" stroke-width="1" opacity="0.3"/></svg>
+          </div>
+          <h3>Platform Engineering</h3>
+          <p>Scalable, cloud-native platforms built for high availability and elastic performance — from microservices to event-driven architectures.</p>
+        </div>
+
+        <div class="service-card reveal" id="service-infra">
+          <div class="service-number">04</div>
+          <div class="service-icon-wrap">
+            <svg viewBox="0 0 40 40" fill="none"><circle cx="20" cy="12" r="6" stroke="currentColor" stroke-width="1"/><circle cx="12" cy="28" r="5" stroke="currentColor" stroke-width="1" opacity="0.6"/><circle cx="28" cy="28" r="5" stroke="currentColor" stroke-width="1" opacity="0.6"/><path d="M20 18v4M15 25l-1 1M25 25l1 1" stroke="currentColor" stroke-width="0.8" opacity="0.4"/></svg>
+          </div>
+          <h3>Digital Infrastructure</h3>
+          <p>Modern DevOps, CI/CD pipelines, and cloud infrastructure that keep your systems resilient, secure, and operating at peak efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ VISION & MISSION ═══ -->
+  <section class="vision" id="vision">
+    <div class="vision-rings">
+      <div class="ring ring-1"></div>
+      <div class="ring ring-2"></div>
+      <div class="ring ring-3"></div>
+    </div>
+    <div class="section-container vision-content">
+      <div class="vision-block reveal">
+        <div class="vision-label">Our Vision</div>
+        <p class="vision-statement">
+          "Building interconnected <em class="accent-text">digital ecosystems</em> that power the next era of intelligent technology."
+        </p>
+      </div>
+      <div class="vision-divider"></div>
+      <div class="mission-block reveal">
+        <div class="vision-label">Our Mission</div>
+        <p class="vision-statement">
+          "To deliver at the intersection of <em class="accent-text">speed</em>, <em class="accent-text">innovation</em>, and <em class="accent-text">scalability</em> — building ventures that shape industries."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FOOTER ═══ -->
+  <footer class="site-footer" id="contact">
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="footer-logo-text">Hopverse</span>
+          <p class="footer-tagline">Technology-first venture studio building the future.</p>
+        </div>
+        <div class="footer-links-group">
+          <div class="footer-col">
+            <h4>Navigate</h4>
+            <a href="#about">About</a>
+            <a href="#ecosystem">Ecosystem</a>
+            <a href="#services">Services</a>
+            <a href="#vision">Vision</a>
+          </div>
+          <div class="footer-col">
+            <h4>Connect</h4>
+            <a href="mailto:hello@hopverse.com">hello@hopverse.com</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter / X</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2025 Hopverse Ventures LLP. All rights reserved.</span>
+        <span class="footer-built">Designed with precision.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
